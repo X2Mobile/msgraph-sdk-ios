@@ -1,5 +1,5 @@
 //
-//  MSLoggerTests.m
+//  MSGraphLoggerTests.m
 //  MSGraphSDK
 //
 //  Created by canviz on 6/15/16.
@@ -7,18 +7,18 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "MSLogger.h"
+#import "MSGraphLogger.h"
 #import "OCMock.h"
 
-@interface MSLoggerTests : XCTestCase
-@property(nonatomic, retain) MSLogger * mockLogger;
+@interface MSGraphLoggerTests : XCTestCase
+@property(nonatomic, retain) MSGraphLogger * mockLogger;
 @end
 
-@implementation MSLoggerTests
+@implementation MSGraphLoggerTests
 
 - (void)setUp {
     [super setUp];
-    self.mockLogger = OCMPartialMock([[MSLogger alloc] initWithLogLevel:MSLogLevelLogError]);
+    self.mockLogger = OCMPartialMock([[MSGraphLogger alloc] initWithLogLevel:MSLogLevelLogError]);
 }
 
 - (void)tearDown {
@@ -27,50 +27,50 @@
 }
 
 - (void)testInitWithLogLevelWithNoLevel {
-    MSLogger *mslogger = [[MSLogger alloc] init];
-    XCTAssertEqual(mslogger.logLevel, 0);
+    MSGraphLogger *MSGraphLogger = [[MSGraphLogger alloc] init];
+    XCTAssertEqual(MSGraphLogger.logLevel, 0);
 }
 - (void)testInitWithLogLevelWithLevel {
-    MSLogger *mslogger = [[MSLogger alloc] initWithLogLevel:MSLogLevelLogError];
-    XCTAssertEqual(mslogger.logLevel, MSLogLevelLogError);
+    MSGraphLogger *MSGraphLogger = [[MSGraphLogger alloc] initWithLogLevel:MSLogLevelLogError];
+    XCTAssertEqual(MSGraphLogger.logLevel, MSLogLevelLogError);
     
-    mslogger = [[MSLogger alloc] initWithLogLevel:MSLogLevelLogWarn];
-    XCTAssertEqual(mslogger.logLevel, MSLogLevelLogWarn);
+    MSGraphLogger = [[MSGraphLogger alloc] initWithLogLevel:MSLogLevelLogWarn];
+    XCTAssertEqual(MSGraphLogger.logLevel, MSLogLevelLogWarn);
     
-    mslogger = [[MSLogger alloc] initWithLogLevel:MSLogLevelLogInfo];
-    XCTAssertEqual(mslogger.logLevel, MSLogLevelLogInfo);
+    MSGraphLogger = [[MSGraphLogger alloc] initWithLogLevel:MSLogLevelLogInfo];
+    XCTAssertEqual(MSGraphLogger.logLevel, MSLogLevelLogInfo);
     
-    mslogger = [[MSLogger alloc] initWithLogLevel:MSLogLevelLogDebug];
-    XCTAssertEqual(mslogger.logLevel, MSLogLevelLogDebug);
+    MSGraphLogger = [[MSGraphLogger alloc] initWithLogLevel:MSLogLevelLogDebug];
+    XCTAssertEqual(MSGraphLogger.logLevel, MSLogLevelLogDebug);
     
     //unkown level
-    mslogger = [[MSLogger alloc] initWithLogLevel:5];
-    XCTAssertEqual(mslogger.logLevel, 5);
+    MSGraphLogger = [[MSGraphLogger alloc] initWithLogLevel:5];
+    XCTAssertEqual(MSGraphLogger.logLevel, 5);
 }
--(void)testMSLoggerDelegateWithLogError{
+-(void)testMSGraphLoggerDelegateWithLogError{
     [self assertWriteMessage:@"Graph SDK ERROR : test logger" LogLevel:MSLogLevelLogError formatter:@"test logger"];
 }
--(void)testMSLoggerDelegateWithLogWarn{
+-(void)testMSGraphLoggerDelegateWithLogWarn{
     [self assertWriteMessage:@"Graph SDK WARNING : test logger" LogLevel:MSLogLevelLogWarn formatter:@"test logger"];
 }
--(void)testMSLoggerDelegateWithLogInfo{
+-(void)testMSGraphLoggerDelegateWithLogInfo{
     [self assertWriteMessage:@"Graph SDK INFO : test logger" LogLevel:MSLogLevelLogInfo formatter:@"test logger"];
 }
--(void)testMSLoggerDelegateWithLogDebug{
+-(void)testMSGraphLoggerDelegateWithLogDebug{
     [self assertWriteMessage:@"Graph SDK DEBUG : test logger" LogLevel:MSLogLevelLogDebug formatter:@"test logger"];
 }
--(void)testMSLoggerDelegateWithLogVerbose{
+-(void)testMSGraphLoggerDelegateWithLogVerbose{
     [self assertWriteMessage:@"Graph SDK VERBOSE : test logger" LogLevel:MSLogLevelLogVerbose formatter:@"test logger"];
 }
--(void)testMSLoggerDelegateWithLogUnknown{
+-(void)testMSGraphLoggerDelegateWithLogUnknown{
     [self assertWriteMessage:@"Graph SDK 100 : test logger" LogLevel:100 formatter:@"test logger"];
 }
--(void)testMSLoggerDelegateWithNilFormatter{
-    id<MSLogger> msloggerDelegate = [[MSLogger alloc] initWithLogLevel:MSLogLevelLogError];
-    [msloggerDelegate setLogLevel:MSLogLevelLogInfo];
+-(void)testMSGraphLoggerDelegateWithNilFormatter{
+    id<MSGraphLogger> MSGraphLoggerDelegate = [[MSGraphLogger alloc] initWithLogLevel:MSLogLevelLogError];
+    [MSGraphLoggerDelegate setLogLevel:MSLogLevelLogInfo];
     NSString *message = nil;
     [self getWriteMessage:&message];
-    [msloggerDelegate logWithLevel:MSLogLevelLogError message:nil];
+    [MSGraphLoggerDelegate logWithLevel:MSLogLevelLogError message:nil];
     XCTAssertNil(message);
 }
 -(void)assertWriteMessage:(NSString *)expectedMessage LogLevel:(MSLogLevel)level formatter:(NSString *)formatter{

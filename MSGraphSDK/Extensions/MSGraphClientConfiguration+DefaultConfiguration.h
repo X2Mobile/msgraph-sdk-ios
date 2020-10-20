@@ -10,12 +10,12 @@
   1.  MSServiceInfoProvider as the serviceInfoProvider to discover the correct Authentication Provider to use
   2.  MSURLSessionManager as the httpProvider
   3.  MSAccountStore as the persistent accountStore
-  4.  MSLogger as the logger for the client (with Error Log level)
+  4.  MSGraphLogger as the logger for the client (with Error Log level)
 
  @see MSServiceInfoProvider
  @see MSURLSessionManager
  @see MSAccountStore
- @see MSLogger
+ @see MSGraphLogger
  
   All of these values are settable via [MSGraphClientConfiguration defaultConfiguration].`<propName>` = provider;
  */

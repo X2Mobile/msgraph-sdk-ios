@@ -1,22 +1,22 @@
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
 #import <Foundation/Foundation.h>
-#import "MSLoggerProtocol.h"
+#import "MSGraphLoggerProtocol.h"
 
 /**
  Simple Logger for the GraphSDK will log everything to the console using NSLog
  
  ## Writing to a File 
  
- If you wish to log to a file instead of the console, it is easiest to subclass the MSLogger and overload writeMessage:
- This method will have the constructed string passed into the [MSLogger logWithLevel:message:] method and passed it along
+ If you wish to log to a file instead of the console, it is easiest to subclass the MSGraphLogger and overload writeMessage:
+ This method will have the constructed string passed into the [MSGraphLogger logWithLevel:message:] method and passed it along
  to the writeMessage: method
 
 
  @see writeMessage:
  
  */
-@interface MSLogger : NSObject <MSLogger>
+@interface MSGraphLogger : NSObject <MSGraphLogger>
 
 /**
  Creates the logger with the given level
