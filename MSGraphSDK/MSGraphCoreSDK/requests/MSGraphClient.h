@@ -29,7 +29,7 @@
 #import "MSGraphModels.h"
 #import "MSHttpProvider.h"
 #import "MSAuthenticationProvider.h"
-#import "MSLoggerProtocol.h"
+#import "MSGraphLoggerProtocol.h"
 
 /**
 * The header for type MSGraphClient.

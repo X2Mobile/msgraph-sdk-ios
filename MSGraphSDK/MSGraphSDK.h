@@ -6,7 +6,7 @@
 #import "MSAuthenticationProvider.h"
 #import "MSHttpProvider.h"
 #import "MSURLSessionManager.h"
-#import "MSLogger.h"
+#import "MSGraphLogger.h"
 #import "MSGraphCoreSDK.h"
 
 #import "NSError+MSGraphSDK.h"

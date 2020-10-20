@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, MSLogLevel){
 };
 
 /**
- `MSLogger` is a protocol to use for simple logging.
+ `MSGraphLogger` is a protocol to use for simple logging.
  
  ## Usage
  
@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, MSLogLevel){
  
 
  */
-@protocol MSLogger <NSObject>
+@protocol MSGraphLogger <NSObject>
 
 /**
  Sets the logging level of the logger.

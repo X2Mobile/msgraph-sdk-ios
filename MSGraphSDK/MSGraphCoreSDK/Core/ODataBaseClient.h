@@ -2,7 +2,7 @@
 
 #import "MSHttpProvider.h"
 #import "MSAuthenticationProvider.h"
-#import "MSLoggerProtocol.h"
+#import "MSGraphLoggerProtocol.h"
 
 @interface ODataBaseClient : NSObject
 
@@ -11,7 +11,7 @@
 
 @property (strong) id<MSHttpProvider> httpProvider;
 
-@property (strong) id<MSLogger> logger;
+@property (strong) id<MSGraphLogger> logger;
 
 @property (strong) id<MSAuthenticationProvider> authenticationProvider;
 

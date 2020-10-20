@@ -20,7 +20,7 @@
 		0E0CFDB31D082531009F9F84 /* MSGraphGroupMembersCollectionWithReferencesRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CFDB21D082531009F9F84 /* MSGraphGroupMembersCollectionWithReferencesRequestTests.m */; };
 		0E0CFDB51D082562009F9F84 /* MSGraphGroupMembersCollectionWithReferencesRequestBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0CFDB41D082562009F9F84 /* MSGraphGroupMembersCollectionWithReferencesRequestBuilderTests.m */; };
 		0E417A471D10EE14000E1E5D /* MSBlockAuthenticationProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E417A461D10EE14000E1E5D /* MSBlockAuthenticationProviderTests.m */; };
-		0E417A4A1D110564000E1E5D /* MSLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E417A491D110564000E1E5D /* MSLoggerTests.m */; };
+		0E417A4A1D110564000E1E5D /* MSGraphLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E417A491D110564000E1E5D /* MSGraphLoggerTests.m */; };
 		0E417A4D1D1135C7000E1E5D /* MSURLSessionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E417A4C1D1135C7000E1E5D /* MSURLSessionManagerTests.m */; };
 		0E4730DF1D06592B00B4E174 /* NSJSONSerialization+ResponseHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4730DE1D06592B00B4E174 /* NSJSONSerialization+ResponseHelperTests.m */; };
 		0E4773DD1D07ABA7008F57B9 /* MSGraphSDKVersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4773DC1D07ABA7008F57B9 /* MSGraphSDKVersionTests.m */; };
@@ -820,8 +820,8 @@
 		7C70E83E1C8776E5008A0C07 /* MSAuthenticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C70E8391C8776E5008A0C07 /* MSAuthenticationProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C70E8411C8776E5008A0C07 /* MSHttpProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C70E83C1C8776E5008A0C07 /* MSHttpProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C70E8421C8776E5008A0C07 /* MSLoggerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C70E83D1C8776E5008A0C07 /* MSLoggerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C70E84F1C877763008A0C07 /* MSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C70E8461C877763008A0C07 /* MSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C70E8501C877763008A0C07 /* MSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C70E8471C877763008A0C07 /* MSLogger.m */; };
+		7C70E84F1C877763008A0C07 /* MSGraphLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C70E8461C877763008A0C07 /* MSGraphLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C70E8501C877763008A0C07 /* MSGraphLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C70E8471C877763008A0C07 /* MSGraphLogger.m */; };
 		7C70E8511C877763008A0C07 /* MSNSURLSessionTaskDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C70E8491C877763008A0C07 /* MSNSURLSessionTaskDelegate.h */; };
 		7C70E8521C877763008A0C07 /* MSNSURLSessionTaskDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C70E84A1C877763008A0C07 /* MSNSURLSessionTaskDelegate.m */; };
 		7C70E8531C877763008A0C07 /* MSURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C70E84B1C877763008A0C07 /* MSURLSessionManager.h */; };
@@ -915,7 +915,7 @@
 		0E0CFDB21D082531009F9F84 /* MSGraphGroupMembersCollectionWithReferencesRequestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGraphGroupMembersCollectionWithReferencesRequestTests.m; sourceTree = "<group>"; };
 		0E0CFDB41D082562009F9F84 /* MSGraphGroupMembersCollectionWithReferencesRequestBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGraphGroupMembersCollectionWithReferencesRequestBuilderTests.m; sourceTree = "<group>"; };
 		0E417A461D10EE14000E1E5D /* MSBlockAuthenticationProviderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBlockAuthenticationProviderTests.m; sourceTree = "<group>"; };
-		0E417A491D110564000E1E5D /* MSLoggerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoggerTests.m; sourceTree = "<group>"; };
+		0E417A491D110564000E1E5D /* MSGraphLoggerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGraphLoggerTests.m; sourceTree = "<group>"; };
 		0E417A4C1D1135C7000E1E5D /* MSURLSessionManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSURLSessionManagerTests.m; sourceTree = "<group>"; };
 		0E4730DE1D06592B00B4E174 /* NSJSONSerialization+ResponseHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+ResponseHelperTests.m"; sourceTree = "<group>"; };
 		0E4773DC1D07ABA7008F57B9 /* MSGraphSDKVersionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGraphSDKVersionTests.m; sourceTree = "<group>"; };
@@ -1719,8 +1719,8 @@
 		7C70E8391C8776E5008A0C07 /* MSAuthenticationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAuthenticationProvider.h; sourceTree = "<group>"; };
 		7C70E83C1C8776E5008A0C07 /* MSHttpProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHttpProvider.h; sourceTree = "<group>"; };
 		7C70E83D1C8776E5008A0C07 /* MSLoggerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoggerProtocol.h; sourceTree = "<group>"; };
-		7C70E8461C877763008A0C07 /* MSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLogger.h; sourceTree = "<group>"; };
-		7C70E8471C877763008A0C07 /* MSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLogger.m; sourceTree = "<group>"; };
+		7C70E8461C877763008A0C07 /* MSGraphLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGraphLogger.h; sourceTree = "<group>"; };
+		7C70E8471C877763008A0C07 /* MSGraphLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGraphLogger.m; sourceTree = "<group>"; };
 		7C70E8491C877763008A0C07 /* MSNSURLSessionTaskDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNSURLSessionTaskDelegate.h; sourceTree = "<group>"; };
 		7C70E84A1C877763008A0C07 /* MSNSURLSessionTaskDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNSURLSessionTaskDelegate.m; sourceTree = "<group>"; };
 		7C70E84B1C877763008A0C07 /* MSURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSURLSessionManager.h; sourceTree = "<group>"; };
@@ -1856,7 +1856,7 @@
 			isa = PBXGroup;
 			children = (
 				0E417A461D10EE14000E1E5D /* MSBlockAuthenticationProviderTests.m */,
-				0E417A491D110564000E1E5D /* MSLoggerTests.m */,
+				0E417A491D110564000E1E5D /* MSGraphLoggerTests.m */,
 				0E417A4B1D11359F000E1E5D /* MSURLSessionManager */,
 			);
 			name = MSGraphSDK;
@@ -2059,8 +2059,8 @@
 			children = (
 				7C70EE4C1C90DE73008A0C07 /* MSBlockAuthenticationProvider.h */,
 				7C70EE4D1C90DE73008A0C07 /* MSBlockAuthenticationProvider.m */,
-				7C70E8461C877763008A0C07 /* MSLogger.h */,
-				7C70E8471C877763008A0C07 /* MSLogger.m */,
+				7C70E8461C877763008A0C07 /* MSGraphLogger.h */,
+				7C70E8471C877763008A0C07 /* MSGraphLogger.m */,
 				7C70E8481C877763008A0C07 /* MSURLSessionManager */,
 			);
 			name = MSGraphSDK;
@@ -3047,7 +3047,7 @@
 				7C6F5B7B1CB33B8B00EDF1C9 /* MSGraphItemAttachmentRequest.h in Headers */,
 				7C6F57D61CB33B8100EDF1C9 /* MSGraphRecurrencePattern.h in Headers */,
 				7C6F5BDE1CB33B8B00EDF1C9 /* MSGraphProfilePhotoRequestBuilder.h in Headers */,
-				7C70E84F1C877763008A0C07 /* MSLogger.h in Headers */,
+				7C70E84F1C877763008A0C07 /* MSGraphLogger.h in Headers */,
 				7C4C19A11CAAF77B00FBDFFD /* MSURLSessionDataTask.h in Headers */,
 				7C6F578D1CB33B8100EDF1C9 /* MSGraphEvent.h in Headers */,
 				7C6F57A51CB33B8100EDF1C9 /* MSGraphIdentitySet.h in Headers */,
@@ -3455,6 +3455,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 10B4D1161AF8215D0083D86C;
@@ -3556,7 +3557,7 @@
 				0E59AC021D013787004C7F92 /* MSQueryParametersTests.m in Sources */,
 				0E0CFD9D1D081FCD009F9F84 /* MSGraphProfilePhotoStreamRequestTests.m in Sources */,
 				0E6D51E31D06D76A00A66F4E /* MSGraphUserMailFoldersCollectionRequestBuilder+KnownFoldersTests.m in Sources */,
-				0E417A4A1D110564000E1E5D /* MSLoggerTests.m in Sources */,
+				0E417A4A1D110564000E1E5D /* MSGraphLoggerTests.m in Sources */,
 				0E4773E01D07ADA4008F57B9 /* NSError+MSGraphSDKTests.m in Sources */,
 				0E59AC061D0182EB004C7F92 /* MSNameConflictTests.m in Sources */,
 				0E7851251D0D1B4800F575F4 /* MSGraphItemBodyTests.m in Sources */,
@@ -3727,7 +3728,7 @@
 				7C70EB4E1C877856008A0C07 /* MSHeaderOptions.m in Sources */,
 				7C6F57D71CB33B8100EDF1C9 /* MSGraphRecurrencePattern.m in Sources */,
 				7C6F5BF31CB33B8B00EDF1C9 /* MSGraphThumbnailSetRequestBuilder.m in Sources */,
-				7C70E8501C877763008A0C07 /* MSLogger.m in Sources */,
+				7C70E8501C877763008A0C07 /* MSGraphLogger.m in Sources */,
 				7C6F58031CB33B8100EDF1C9 /* MSGraphVideo.m in Sources */,
 				7C6F5A681CB33B8B00EDF1C9 /* MSGraphConversationThreadReplyRequestBuilder.m in Sources */,
 				7C6F5BB01CB33B8B00EDF1C9 /* MSGraphMessageReplyAllRequest.m in Sources */,

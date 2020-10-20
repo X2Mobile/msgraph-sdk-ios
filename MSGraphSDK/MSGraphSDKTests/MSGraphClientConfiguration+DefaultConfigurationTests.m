@@ -32,8 +32,8 @@
     XCTAssertNotNil(msgraphClientConfiguration);
     
     XCTAssertTrue([msgraphClientConfiguration.httpProvider isKindOfClass:[MSURLSessionManager class]]);
-    XCTAssertTrue([msgraphClientConfiguration.logger isKindOfClass:[MSLogger class]]);
-    MSLogger *logger = msgraphClientConfiguration.logger;
+    XCTAssertTrue([msgraphClientConfiguration.logger isKindOfClass:[MSGraphLogger class]]);
+    MSGraphLogger *logger = msgraphClientConfiguration.logger;
     XCTAssertEqual(logger.logLevel, MSLogLevelLogError);
     
     NSString *expectedApiEndpoint = [NSString stringWithFormat:@"%@/%@", MSGraphApiEndpoint, MSGraphApiVersion];

@@ -3,7 +3,7 @@
 #import <Foundation/Foundation.h>
 #import "MSHttpProvider.h"
 #import "MSAuthenticationProvider.h"
-#import "MSLoggerProtocol.h"
+#import "MSGraphLoggerProtocol.h"
 
 /**
  Configuration for the application.
@@ -27,7 +27,7 @@
 /**
  The logger to be used in the MSGraphClient.
  */
-@property (strong, nonatomic) id <MSLogger> logger;
+@property (strong, nonatomic) id <MSGraphLogger> logger;
 
 @property (strong, nonatomic) NSString *apiEndpoint;
 
