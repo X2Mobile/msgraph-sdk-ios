@@ -66,7 +66,7 @@
     [self assertWriteMessage:@"Graph SDK 100 : test logger" LogLevel:100 formatter:@"test logger"];
 }
 -(void)testMSGraphLoggerDelegateWithNilFormatter{
-    id<MSGraphLogger> MSGraphLoggerDelegate = [[MSGraphLogger alloc] initWithLogLevel:MSLogLevelLogError];
+    id<MSLogger> MSGraphLoggerDelegate = [[MSGraphLogger alloc] initWithLogLevel:MSLogLevelLogError];
     [MSGraphLoggerDelegate setLogLevel:MSLogLevelLogInfo];
     NSString *message = nil;
     [self getWriteMessage:&message];

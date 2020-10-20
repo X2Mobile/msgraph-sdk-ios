@@ -11,7 +11,7 @@
 
 @property (strong) id<MSHttpProvider> httpProvider;
 
-@property (strong) id<MSGraphLogger> logger;
+@property (strong) id<MSLogger> logger;
 
 @property (strong) id<MSAuthenticationProvider> authenticationProvider;
 
