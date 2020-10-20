@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, MSLogLevel){
  
 
  */
-@protocol MSGraphLogger <NSObject>
+@protocol MSLogger <NSObject>
 
 /**
  Sets the logging level of the logger.
