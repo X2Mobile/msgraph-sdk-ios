@@ -2,7 +2,7 @@
 
 #import "MSHttpProvider.h"
 #import "MSAuthenticationProvider.h"
-#import "MSGraphLoggerProtocol.h"
+#import "MSLoggerProtocol.h"
 
 @interface ODataBaseClient : NSObject
 

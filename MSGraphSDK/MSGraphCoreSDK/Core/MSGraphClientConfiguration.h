@@ -3,7 +3,7 @@
 #import <Foundation/Foundation.h>
 #import "MSHttpProvider.h"
 #import "MSAuthenticationProvider.h"
-#import "MSGraphLoggerProtocol.h"
+#import "MSLoggerProtocol.h"
 
 /**
  Configuration for the application.
